@@ -151,7 +151,7 @@ impl<T: std::any::Any>  BinarySearchByKey<T> for [T] {
     }
 }
 
-fn main() {
-    let v = vec![3, 4, 23, 422, 1343, 0];
-    println!("{:?}", v.upper_bound(&23));
-}
+// fn main() {
+//     let v = vec![3, 4, 23, 422, 1343, 0];
+//     println!("{:?}", v.upper_bound(&23));
+// }

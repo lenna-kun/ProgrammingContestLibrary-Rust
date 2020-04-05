@@ -59,12 +59,12 @@ impl<T> LexicalPermutation for [T] where T: Ord {
 
 }
 
-fn main() {
-    let mut data = vec![1, 2, 3];
-    loop {
-        println!("{:?}", data);
-        if !data.next_permutation() {
-            break;
-        }
-    }
-}
+// fn main() {
+//     let mut data = vec![1, 2, 3];
+//     loop {
+//         println!("{:?}", data);
+//         if !data.next_permutation() {
+//             break;
+//         }
+//     }
+// }

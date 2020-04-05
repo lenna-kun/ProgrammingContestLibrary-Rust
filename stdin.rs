@@ -48,8 +48,9 @@ fn read_mat_char(s: &mut StdinLock, n: usize) -> Vec<Vec<char>> {
 fn read_mat_tuple_int(s: &mut StdinLock, n: usize) -> Vec<(usize, usize)> {
     (0..n).map(|_| read_tuple_int(s)).collect()
 }
-fn main(){
-    let s = stdin();
-    let mut s = s.lock();
-    println!("{}", read_char(&mut s));
-}
+
+// fn main(){
+//     let s = stdin();
+//     let mut s = s.lock();
+//     println!("{}", read_char(&mut s));
+// }
