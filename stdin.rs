@@ -14,9 +14,6 @@ fn read_char(s: &mut StdinLock) -> char {
         .last()
         .unwrap()
 }
-fn read_tuple_int(s: &mut StdinLock) -> (usize, usize) {
-    (read_int(s), read_int(s))
-}
 fn read_line_split_int(s: &mut StdinLock, n: usize) -> Vec<usize> {
     (0..n).map(|_| read_int(s)).collect()
 }
@@ -46,7 +43,7 @@ fn read_mat_char(s: &mut StdinLock, n: usize) -> Vec<Vec<char>> {
     (0..n).map(|_| read_line_char(s)).collect()
 }
 fn read_mat_tuple_int(s: &mut StdinLock, n: usize) -> Vec<(usize, usize)> {
-    (0..n).map(|_| read_tuple_int(s)).collect()
+    (0..n).map(|_| (read_int(s), read_int(s))).collect()
 }
 
 // fn main(){
